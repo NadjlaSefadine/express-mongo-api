@@ -1,0 +1,32 @@
+@productId=654c8e7a9b0c1d2e3f4a5b6c
+
+### Liste tous les produits
+GET http://localhost:5000/products
+
+### Ajoute un nouveau produit
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "productName": "Test Produit",
+  "price": 19.99,
+  "stockStatus": "en stock"
+}
+
+### Récupère un produit par son ID
+GET http://localhost:5000/products/{{productId}}
+
+### Modifie le statut du stock d'un produit
+PATCH http://localhost:5000/products/{{productId}}/petite%20stock
+
+### Modifie le nom et le prix d'un produit
+PATCH http://localhost:5000/products/{{productId}}
+Content-Type: application/json
+
+{
+  "productName": "Produit Modifié",
+  "price": 29.99
+}
+
+### Supprime un produit
+DELETE http://localhost:5000/products/{{productId}}
