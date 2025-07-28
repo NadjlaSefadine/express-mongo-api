@@ -1,5 +1,9 @@
-{
+[{
     "productName": "Ordinateur Portable",
     "price": 1200.50,
     "stockStatus": "en stock"
-}
+},
+{
+    "productName": "Ordinateur Portable Pro",
+    "price": 1350.00
+}]
